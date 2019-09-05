@@ -1,0 +1,90 @@
+@tailwind base;
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  font-size: calc(1rem + 0.35vw);
+  line-height: calc(1rem + 1.05vw);
+  color: var(--primary-text);
+  background-color: var(--primary-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 1.912rem;
+  line-height: calc(1rem + 1.8vw);
+}
+
+h2 {
+  font-size: 1.616rem;
+  line-height: calc(1rem + 1vw);
+}
+
+h3 {
+  font-size: 1.471rem;
+  line-height: calc(1rem + 0.7vw);
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.243rem;
+}
+
+h6 {
+  font-size: 1.132rem;
+}
+
+h4,
+h5,
+h6 {
+  line-height: calc(1rem + 0.2vw);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  margin: calc(1rem + 1.05vw) 0;
+  font-weight: 600;
+}
+
+p,
+i,
+li {
+  letter-spacing: -0.04px;
+  line-height: calc(1rem + 1.35vw);
+}
+
+mark,
+.highlighted {
+  background: #7DFFB3;
+}
+
+::selection {
+  background-color: lavender
+}
+
+.background-img:after {
+  content: " ";
+  z-index: 1;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@tailwind components;
+
+@tailwind utilities;
