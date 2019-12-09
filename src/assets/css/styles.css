@@ -1,7 +1,7 @@
 @tailwind base;
 
 * {
-  font-family: "Lato", sans-serif;
+  font-family: 'Cabin', sans-serif;
 }
 
 body {
@@ -39,24 +39,20 @@ h5 {
 h6 {
   font-size: 1.132rem;
 }
-
 h4,
 h5,
 h6 {
   line-height: calc(1rem + 0.2vw);
 }
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
   margin: calc(1rem + 1.05vw) 0;
   font-weight: 600;
 }
-
 p,
 i,
 li {
@@ -66,25 +62,35 @@ li {
 
 mark,
 .highlighted {
-  background: #7DFFB3;
+  background: #7dffb3;
 }
 
 ::selection {
-  background-color: lavender
+  background-color: lavender;
+}
+
+.background-img {
+  perspective: 2px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .background-img:after {
-  content: " ";
-  z-index: 1;
-  display: block;
+  content: ' ';
   position: absolute;
-  height: 100%;
   top: 0;
-  left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.21);
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
 }
+
 
 @tailwind components;
 
 @tailwind utilities;
+
+
