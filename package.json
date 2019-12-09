@@ -1,11 +1,11 @@
 {
-  "name": "parcel-sandbox",
+  "name": "jant-haul",
   "version": "1.0.0",
-  "description": "Simple Parcel Sandbox",
+  "description": "Jant Haul",
   "main": "index.html",
   "scripts": {
-    "start": "npx parcel index.html --open",
-    "build": "npx parcel build index.html"
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
   },
   "dependencies": {},
   "devDependencies": {
